@@ -1,0 +1,53 @@
+<!--
+   Name: Mohammad Taaha
+   91.61 Assignment:  Creating an Interactive Dynamic Table
+   Mohammad Taaha, UMass Lowell Computer Science Student,mohammad_taaha@student.uml.edu
+   Copyright (c) 2018 by Mohammad Taaha.  All rights reserved.  May be
+   freely copied or excerpted for educational purposes with credit to the
+   author.
+   Created on 11/13/2018
+   Description:This webpage will take an input from the user background
+   and create a dynamic multiplication table. The user cannot only enter digits
+   and will be thrown a message asking them to enter a valid input if they do no.
+   I have also designed the multiplcation table using css..
+   -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   </head>
+   <style>
+      p {
+      }
+   </style>
+   </head>
+   <body>
+      <div class = "container">
+      <div class="page-header">
+         <h1>
+            Multiplication table
+         </h1>
+      </div>
+      <div class= "jumbotron">
+         <div class="form-group">
+            <!--asks user for horizontal input>-->
+            <label for="horizontal_axis">Please enter the horizontal axis bounding numbes:</label>
+            <input type="number" class="form-control" id="fh_axis">
+            <input type="number" class="form-control" id="sh_axis">
+         </div>
+         <div class="form-group">
+            <!--asks user for vertical input>-->
+            <label for="vertical_axis">Please enter the vertical axis bounding numbes:</label>
+            <input type="number" class="form-control" id="fv_axis">
+            <input type="number" class="form-control" id="sv_axis">
+         </div>
+         <button onclick="multiplier()">Submit</button>
+      </div>
+      <p2 id = "table">
+         <!--used to display the multiplication table on the screen>-->
+      </p2>
+      <script src="js/javascript.js"></script>
+   </body>
+</html>
